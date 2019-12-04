@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QuizBall</title>
+    <h1>QUIZ BALL</h1>
+    <link rel="stylesheet" href="login.css" />
+    <script defer src="/__/firebase/7.3.0/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase.js"></script> -->
+    <!-- <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <!-- update the version number as needed -->
+    
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.3.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.3.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.3.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.3.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="bower_components/firebaseui/dist/firebaseui.js"></script>-
+    <link type="text/css" rel="stylesheet" href="bower_components/firebaseui/dist/firebaseui.css" />
+   
+    
+
+  </head>
+  <body>
+    <div id="login_div" class="main-div">
+        <h3>Login</h3>
+        <input type="email" placeholder="Email..." id="email_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+      
+        <button onclick="login()">Login to Account</button>
+    </div>
+    
+    <button onclick="googleLogin()">
+        Login with Google
+    </button>
+      <!-- SIGN UP MODAL -->
+  <div id="modal-signup" class="modal">
+      <div class="modal-content">
+        <h4>Sign up</h4><br />
+        <form id="signup-form">
+          <div class="input-field">
+            <input type="email" id="signup-email" required />
+            <label for="signup-email">Email address</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="signup-password" required />
+            <label for="signup-password">Choose password</label>
+          </div>
+          <button class="signup-button">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+
+    
+    
+  
+
+    <script src="index.js"></script>
+  
+  </body>
+  
+</html>
