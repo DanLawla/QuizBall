@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Ball Challenge</title>
+    <link rel="stylesheet" href="home.css" />
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.9.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.9.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.3.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.3.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.3.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    
+
+  </head>
+  <body>
+    <h1>Create a challenge</h1>
+
+    <form id="challenge-form">
+            <div class="question-field">
+              <input type="question" id="question-id" required />
+              <label for="question-id">Enter the question for challenge</label>
+            </div>
+            <div class="answer-field">
+              <input type="answer" id="answer-id" required />
+              <label for="answer-id">Enter correct answer for above question</label>
+            </div>
+            <button class="signup-button">Submit challenge</button>
+    </form>
+    
+    <a href="main.html">Go back </a>
+    <script src="create.js"></script>
+</body>
+</html>
